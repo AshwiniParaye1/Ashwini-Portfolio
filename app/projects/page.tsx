@@ -109,7 +109,7 @@ export default function Projects() {
           </div>
         ))}
       </div>
-      <div className="mt-8">
+      <div className="mt-8 mb-8">
         <Link
           href="https://github.com/AshwiniParaye1"
           target="_blank"
