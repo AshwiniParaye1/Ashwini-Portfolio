@@ -5,7 +5,7 @@ import "./globals.css";
 const jetbrainsMono = JetBrains_Mono({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Fullstack Developer Portfolio",
+  title: "Ashwini Paraye",
   description: "Portfolio showcasing my work as a fullstack developer"
 };
 
