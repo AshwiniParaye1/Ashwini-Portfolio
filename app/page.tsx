@@ -308,7 +308,7 @@ export default function Home() {
           <span className="text-purple-500">async function</span>{" "}
           <span className="text-blue-500">contactMe</span>() {"{"}
         </h2>
-        <div className="border border-green-500 p-6 rounded-lg">
+        <div className="border border-green-500 p-6 rounded-lg contact-card">
           <p className="mb-8">
             I&apos;d love to hear from you. Whether you have a question or just
             want to talk about tech or my work, projects, or anything else

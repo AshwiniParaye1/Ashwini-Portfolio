@@ -175,3 +175,11 @@
 .education-card:hover {
   transform: scale(1.03); /* Scale up on hover */
 }
+
+.contact-card {
+  transition: transform 0.2s ease-in-out; /* Smooth transition for scaling */
+}
+
+.contact-card:hover {
+  transform: scale(1.03); /* Scale up on hover */
+}
