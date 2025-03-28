@@ -313,10 +313,10 @@ export default function Home() {
           <span className="text-blue-500">contactMe</span>() {"{"}
         </h2>
         <div className="ml-8 border border-green-500 p-6 rounded-lg">
-          <p className="mb-4">
-            Interested in a conversation? Drop DM&apos;s over linkedin or email.
-            Ask me anything about my work, my projects, or anything else
-            you&apos;d like.
+          <p className="mb-8">
+            I&apos;d love to hear from you. Whether you have a question or just
+            want to talk about tech or my work, projects, or anything else
+            you&apos;d like. Just Drop a message over Linkedin or Email.
           </p>
           <div className="flex gap-4">
             <Link
