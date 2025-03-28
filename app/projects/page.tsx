@@ -14,7 +14,6 @@ const allProjects = [
       "React.js",
       "JavaScript",
       "Clerk",
-      "Neon",
       "Drizzle",
       "Gemini AI"
     ],
@@ -93,17 +92,21 @@ export default function Projects() {
             className="border border-green-500 p-6 rounded-lg hover:bg-green-500/5 transition-colors"
           >
             <Link href={project.link} rel="noopener noreferrer" target="_blank">
-              <h3 className="text-xl font-bold mb-2">{project.title}</h3>
-              <p className="text-gray-400 mb-4">{project.description}</p>
-              <div className="flex flex-wrap gap-2">
-                {project.tech.map((tech, techIndex) => (
-                  <span
-                    key={techIndex}
-                    className="text-xs bg-green-500/20 text-green-500 px-2 py-1 rounded"
-                  >
-                    {tech}
-                  </span>
-                ))}
+              <div className="flex flex-col h-full justify-between">
+                <div>
+                  <h3 className="text-xl font-bold mb-2">{project.title}</h3>
+                  <p className="text-gray-400 mb-4">{project.description}</p>
+                </div>
+                <div className="flex flex-wrap gap-2">
+                  {project.tech.map((tech, techIndex) => (
+                    <span
+                      key={techIndex}
+                      className="text-xs bg-green-500/20 text-green-500 px-2 py-1 rounded"
+                    >
+                      {tech}
+                    </span>
+                  ))}
+                </div>
               </div>
             </Link>
           </div>

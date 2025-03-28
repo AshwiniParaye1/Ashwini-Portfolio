@@ -144,7 +144,7 @@ export default function Home() {
           <span className="text-purple-500">const</span>{" "}
           <span className="text-blue-500">experience</span>= {"{"}
         </h2>
-        <div className="ml-8 space-y-6">
+        <div className=" space-y-6">
           <div className="border border-green-500 p-6 rounded-lg">
             <div className="flex items-center gap-2 mb-2">
               <Briefcase className="w-5 h-5" />
@@ -194,7 +194,7 @@ export default function Home() {
           <span className="text-purple-500">async function</span>{" "}
           <span className="text-blue-500">getProjects</span>() {"{"}
         </h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 ml-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 ">
           {projects.map((project, index) => (
             <div
               key={index}
@@ -205,18 +205,22 @@ export default function Home() {
                 rel="noopener noreferrer"
                 target="_blank"
               >
-                <h3 className="text-xl font-bold mb-2">{project.title}</h3>
-                <p className="text-gray-400 mb-4">{project.description}</p>
-                <div className="flex flex-wrap gap-2">
-                  {project.tech.map((tech, techIndex) => (
-                    <span
-                      key={techIndex}
-                      className="text-xs bg-green-500/20 text-green-500 px-2 py-1 rounded"
-                    >
-                      {tech}
-                    </span>
-                  ))}
-                </div>{" "}
+                <div className="flex flex-col h-full justify-between">
+                  <div>
+                    <h3 className="text-xl font-bold mb-2">{project.title}</h3>
+                    <p className="text-gray-400 mb-4">{project.description}</p>
+                  </div>
+                  <div className="flex flex-wrap gap-2">
+                    {project.tech.map((tech, techIndex) => (
+                      <span
+                        key={techIndex}
+                        className="text-xs bg-green-500/20 text-green-500 px-2 py-1 rounded"
+                      >
+                        {tech}
+                      </span>
+                    ))}
+                  </div>
+                </div>
               </Link>
             </div>
           ))}
@@ -238,7 +242,7 @@ export default function Home() {
           <span className="text-purple-500">async function</span>{" "}
           <span className="text-blue-500">getBlogs</span>() {"{"}
         </h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 ml-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           {blogs.map((blog, index) => (
             <div
               key={index}
@@ -279,7 +283,7 @@ export default function Home() {
           <span className="text-purple-500">async function</span>{" "}
           <span className="text-blue-500">getEducation</span>() {"{"}
         </h2>
-        <div className="ml-8 mb-8">
+        <div className="mb-8">
           <div className="border border-green-500 p-6 rounded-lg">
             <div className="flex items-center gap-2 mb-2">
               <GraduationCap className="w-5 h-5" />
@@ -291,7 +295,7 @@ export default function Home() {
             </p>
           </div>
         </div>
-        <div className="ml-8">
+        <div className="">
           <div className="border border-green-500 p-6 rounded-lg">
             <div className="flex items-center gap-2 mb-2">
               <GraduationCap className="w-5 h-5" />
@@ -312,7 +316,7 @@ export default function Home() {
           <span className="text-purple-500">async function</span>{" "}
           <span className="text-blue-500">contactMe</span>() {"{"}
         </h2>
-        <div className="ml-8 border border-green-500 p-6 rounded-lg">
+        <div className="border border-green-500 p-6 rounded-lg">
           <p className="mb-8">
             I&apos;d love to hear from you. Whether you have a question or just
             want to talk about tech or my work, projects, or anything else
