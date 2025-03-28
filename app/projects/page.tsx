@@ -89,7 +89,7 @@ export default function Projects() {
         {filteredProjects.map((project, index) => (
           <div
             key={index}
-            className="border border-green-500 p-6 rounded-lg hover:bg-green-500/5 transition-colors"
+            className="project-card border border-green-500 p-6 rounded-lg hover:bg-green-500/5 transition-colors"
           >
             <Link href={project.link} rel="noopener noreferrer" target="_blank">
               <div className="flex flex-col h-full justify-between">

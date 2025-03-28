@@ -1,3 +1,5 @@
+"use client";
+
 import {
   BookOpen,
   Briefcase,
@@ -62,14 +64,6 @@ export default function Home() {
           <span className="text-xl font-bold">ashwini@portfolio:~$</span>
         </div>
         <div className="flex items-center gap-6">
-          {/* <Link
-            href="/resume.pdf"
-            className="flex items-center gap-2 border border-green-500 px-4 py-2 rounded hover:bg-green-500 hover:text-black transition-colors"
-            download
-          >
-            <FileDown className="w-5 h-5" />
-          </Link> */}
-
           {/* navlinks */}
           <div className="flex gap-4 navlinks">
             <Link
@@ -122,10 +116,6 @@ export default function Home() {
               <span className="text-purple-500">role:</span> &quot;Full Stack
               Developer&quot;,
             </p>
-            {/* <p className="mb-2">
-              <span className="text-purple-500">location:</span> &quot;Toronto,
-              CA&quot;,
-            </p> */}
             <p className="mb-4">
               <span className="text-purple-500">about:</span> &quot;A passionate
               Full Stack Developer with a love for writing, based in the vibrant
@@ -147,7 +137,7 @@ export default function Home() {
           <span className="text-blue-500">experience</span>= {"{"}
         </h2>
         <div className=" space-y-6">
-          <div className="border border-green-500 p-6 rounded-lg">
+          <div className="experience-card border border-green-500 p-6 rounded-lg">
             <div className="flex items-center gap-2 mb-2">
               <Briefcase className="w-5 h-5" />
               <h3 className="text-xl font-bold">
@@ -166,7 +156,7 @@ export default function Home() {
               debugging and optimization.
             </p>
           </div>
-          <div className="border border-green-500 p-6 rounded-lg">
+          <div className="experience-card border border-green-500 p-6 rounded-lg">
             <div className="flex items-center gap-2 mb-2">
               <Briefcase className="w-5 h-5" />
               <h3 className="text-xl font-bold">
@@ -200,7 +190,7 @@ export default function Home() {
           {projects.map((project, index) => (
             <div
               key={index}
-              className="border border-green-500 p-6 rounded-lg hover:bg-green-500/5 transition-colors"
+              className="project-card border border-green-500 p-6 rounded-lg hover:bg-green-500/5 transition-colors"
             >
               <Link
                 href={project.link}
@@ -248,7 +238,7 @@ export default function Home() {
           {blogs.map((blog, index) => (
             <div
               key={index}
-              className="border border-green-500 p-6 rounded-lg hover:bg-green-500/5 transition-colors"
+              className="blog-card border border-green-500 p-6 rounded-lg hover:bg-green-500/5 transition-colors"
             >
               <div className="flex items-center gap-2 mb-2">
                 <BookOpen className="w-5 h-5" />
@@ -286,7 +276,7 @@ export default function Home() {
           <span className="text-blue-500">getEducation</span>() {"{"}
         </h2>
         <div className="mb-8">
-          <div className="border border-green-500 p-6 rounded-lg">
+          <div className="education-card border border-green-500 p-6 rounded-lg">
             <div className="flex items-center gap-2 mb-2">
               <GraduationCap className="w-5 h-5" />
               <h3 className="text-xl font-bold">Master of Science</h3>
@@ -298,7 +288,7 @@ export default function Home() {
           </div>
         </div>
         <div className="">
-          <div className="border border-green-500 p-6 rounded-lg">
+          <div className="education-card border border-green-500 p-6 rounded-lg">
             <div className="flex items-center gap-2 mb-2">
               <GraduationCap className="w-5 h-5" />
               <h3 className="text-xl font-bold">Bachelor of Science</h3>

@@ -141,3 +141,37 @@
     align-items: center;
   }
 }
+
+/* styles/globals.css */
+
+.project-card {
+  transition: transform 0.2s ease-in-out; /* Smooth transition for scaling */
+}
+
+.project-card:hover {
+  transform: scale(1.05); /* Scale up on hover */
+}
+
+.experience-card {
+  transition: transform 0.2s ease-in-out; /* Smooth transition for scaling */
+}
+
+.experience-card:hover {
+  transform: scale(1.03); /* Scale up on hover */
+}
+
+.blog-card {
+  transition: transform 0.2s ease-in-out; /* Smooth transition for scaling */
+}
+
+.blog-card:hover {
+  transform: scale(1.03); /* Scale up on hover */
+}
+
+.education-card {
+  transition: transform 0.2s ease-in-out; /* Smooth transition for scaling */
+}
+
+.education-card:hover {
+  transform: scale(1.03); /* Scale up on hover */
+}
