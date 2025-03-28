@@ -126,3 +126,18 @@
 * {
   font-family: "Iceberg";
 }
+@media (max-width: 768px) {
+  .navlinks {
+    position: fixed;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: black;
+    border-top: 1px solid green; /* Corrected the color value */
+    padding: 0.5rem 1rem; /* Using rem for better scalability, adjust as needed */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+}

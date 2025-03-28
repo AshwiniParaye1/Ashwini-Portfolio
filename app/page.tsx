@@ -69,7 +69,9 @@ export default function Home() {
           >
             <FileDown className="w-5 h-5" />
           </Link> */}
-          <div className="flex gap-4">
+
+          {/* navlinks */}
+          <div className="flex gap-4 navlinks">
             <Link
               href="https://github.com/AshwiniParaye1"
               className="hover:text-green-400"
