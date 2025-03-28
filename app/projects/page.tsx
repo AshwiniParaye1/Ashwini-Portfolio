@@ -92,20 +92,22 @@ export default function Projects() {
             key={index}
             className="border border-green-500 p-6 rounded-lg hover:bg-green-500/5 transition-colors"
           >
-            <h3 className="text-xl font-bold mb-2">{project.title}</h3>
-            <p className="text-gray-400 mb-4">{project.description}</p>
-            <div className="flex flex-wrap gap-2">
-              {project.tech.map((tech, techIndex) => (
-                <span
-                  key={techIndex}
-                  className="text-xs bg-green-500/20 text-green-500 px-2 py-1 rounded"
-                >
-                  {tech}
-                </span>
-              ))}
-            </div>
+            <Link href={project.link} rel="noopener noreferrer" target="_blank">
+              <h3 className="text-xl font-bold mb-2">{project.title}</h3>
+              <p className="text-gray-400 mb-4">{project.description}</p>
+              <div className="flex flex-wrap gap-2">
+                {project.tech.map((tech, techIndex) => (
+                  <span
+                    key={techIndex}
+                    className="text-xs bg-green-500/20 text-green-500 px-2 py-1 rounded"
+                  >
+                    {tech}
+                  </span>
+                ))}
+              </div>
+            </Link>
           </div>
-        ))}{" "}
+        ))}
       </div>
       <div className="mt-8">
         <Link
