@@ -110,7 +110,7 @@ export default function Home() {
           <div className="ml-8">
             <p className="mb-2">
               <span className="text-purple-500">name:</span> &quot;Ashwini
-              Parage&quot;,
+              Paraye&quot;,
             </p>
             <p className="mb-2">
               <span className="text-purple-500">role:</span> &quot;Full Stack
@@ -118,7 +118,7 @@ export default function Home() {
             </p>
             <p className="mb-4">
               <span className="text-purple-500">about:</span> &quot;A passionate
-              Full Stack Developer with a love for writing, based in the vibrant
+              Full Stack Developer with love for writing, based in the vibrant
               world of technology. With expertise in both front-end and back-end
               development, I craft seamless, user-focused web applications. When
               I&apos;m not coding, I share my knowledge and insights through
