@@ -64,14 +64,30 @@ export default function Projects() {
   );
 
   return (
-    <main className="min-h-screen bg-black text-green-500 p-8">
+    <main
+      className="min-h-screen p-8"
+      style={{
+        backgroundColor: "var(--background)",
+        color: "var(--foreground)"
+      }}
+    >
       <nav className="flex items-center gap-4 mb-16">
-        <Link href="/" className="hover:text-green-400">
+        <Link
+          href="/"
+          className="transition-colors"
+          style={{ color: "var(--primary)" }}
+        >
           <ArrowLeft className="w-6 h-6" />
         </Link>
         <div className="flex items-center gap-2">
-          <Terminal className="w-6 h-6" />
-          <span className="text-xl font-bold">
+          <Terminal
+            className="w-6 h-6"
+            style={{ color: "var(--palette-50)" }}
+          />
+          <span
+            className="text-xl font-bold"
+            style={{ color: "var(--foreground)" }}
+          >
             ashwini@portfolio:/projects$
           </span>
         </div>
@@ -81,7 +97,12 @@ export default function Projects() {
         <input
           type="text"
           placeholder="Search projects..."
-          className="w-full max-w-md px-4 py-2 bg-transparent border border-green-500 rounded text-green-500 focus:outline-none focus:ring-2 focus:ring-green-500/50"
+          className="w-full max-w-md px-4 py-2 rounded"
+          style={{
+            backgroundColor: "var(--input)",
+            color: "var(--foreground)",
+            border: "1px solid var(--border)"
+          }}
           value={filter}
           onChange={(e) => setFilter(e.target.value)}
         />
@@ -91,19 +112,38 @@ export default function Projects() {
         {filteredProjects.map((project, index) => (
           <div
             key={index}
-            className="project-card border border-green-500 p-6 rounded-lg hover:bg-green-500/5 transition-colors"
+            className="project-card p-6 rounded-lg"
+            style={{
+              backgroundColor: "var(--card)",
+              color: "var(--card-foreground)",
+              border: "1px solid var(--border)"
+            }}
           >
             <Link href={project.link} rel="noopener noreferrer" target="_blank">
               <div className="flex flex-col h-full justify-between">
                 <div>
-                  <h3 className="text-xl font-bold mb-2">{project.title}</h3>
-                  <p className="text-gray-400 mb-4">{project.description}</p>
+                  <h3
+                    className="text-xl font-bold mb-2"
+                    style={{ color: "var(--foreground)" }}
+                  >
+                    {project.title}
+                  </h3>
+                  <p
+                    className="mb-4"
+                    style={{ color: "var(--muted-foreground)" }}
+                  >
+                    {project.description}
+                  </p>
                 </div>
                 <div className="flex flex-wrap gap-2">
                   {project.tech.map((tech, techIndex) => (
                     <span
                       key={techIndex}
-                      className="text-xs bg-green-500/20 text-green-500 px-2 py-1 rounded"
+                      className="text-xs px-2 py-1 rounded"
+                      style={{
+                        backgroundColor: "var(--primary)",
+                        color: "var(--primary-foreground)"
+                      }}
                     >
                       {tech}
                     </span>
@@ -119,7 +159,11 @@ export default function Projects() {
           href="https://github.com/AshwiniParaye1"
           target="_blank"
           rel="noopener noreferrer "
-          className="inline-flex items-center gap-2 border border-green-500 px-6 py-2 rounded hover:bg-green-500 hover:text-black transition-colors"
+          className="inline-flex items-center gap-2 px-6 py-2 rounded"
+          style={{
+            color: "var(--foreground)",
+            border: "1px solid var(--border)"
+          }}
         >
           Check Out More Projects on Github <RiGithubLine className="w-4 h-4" />
         </Link>
