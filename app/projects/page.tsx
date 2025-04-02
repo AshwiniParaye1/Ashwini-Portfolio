@@ -1,3 +1,5 @@
+//app/projects/page.tsx
+
 "use client";
 
 import { ArrowLeft, Terminal } from "lucide-react";
